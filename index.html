@@ -2,35 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Elements</title>
-    
-<style>
-    .paragraphClass {
-    font-size: 35px;
-    color: blue;
-}
+    <title>Example 1</title>
+    <style>
+        .paragraphClass {
+            font-size: 30px;
+            color: blue;
+        }
 
-#button {
-    margin-top: 15px;
-}
-</style>
+        #Button {
+            margin-top: 15px;
+        }
+    </style>
 
-<script>
-    function myFunc() {
-    let para = document.getElementsById("p");
-    para.classList.toggle("paragraphClass");
-}
-</script>
+    <script>
+        function myFunc() {
+            let para = document.getElementById("p");
+            para.classList.toggle("paragraphClass");
+        }
+    </script>
 </head>
 
 <body>
     <p id="p">
-        Click on the "click me" button to see the toggled version!
+        Click on the "Click Me" button to see the toggle in action.
     </p>
 
-    <button id="button" onclick="myFunc()">
+    <button id="Button" onclick="myFunc()">
         Click Me
     </button>
 </body>
+
 </html>

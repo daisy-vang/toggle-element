@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Example 2</title>
+        <style>
+            .paragraphClass {
+                font-size: 30px;
+                color: blue;
+            }
+    
+            #Button {
+                margin-top: 15px;
+            }
+        </style>
+    
+        <script>
+            function myFunc() {
+                let para = document.getElementById("p");
+    
+                if (para.classList.contains("paragraphClass")) {
+                    para.classList.remove("paragraphClass");
+                }
+                else {
+                    para.classList.add("paragraphClass");
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p id="p">
+            Click on the "Click Me" button to see the toggle in action.
+        </p>
+    
+        <button id="Button" onclick="myFunc()">
+            Click Me
+        </button>
+    </body>
+    
+    </html>
