@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Elements</title>
+    
+<style>
+    .paragraphClass {
+    font-size: 35px;
+    color: blue;
+}
+
+#button {
+    margin-top: 15px;
+}
+</style>
+
+<script>
+    function myFunc() {
+    let para = document.getElementsById("p");
+    para.classList.toggle("paragraphClass");
+}
+</script>
+</head>
+
+<body>
+    <p id="p">
+        Click on the "click me" button to see the toggled version!
+    </p>
+
+    <button id="button" onclick="myFunc()">
+        Click Me
+    </button>
+</body>
+</html>
